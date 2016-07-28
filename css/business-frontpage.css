@@ -1,0 +1,66 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url("../images/Chicago_State_St.jpg") center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+
+.tagline {
+    margin-top: 125px;
+    font-size: 45pt;
+    color:/*#FFCAD4*/#6D2E46;    
+    text-align:center;
+    font-weight:900;
+    font-family: Cooper;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.taglineSmall {
+    color:/*#C08497*/#6D2E46;
+    margin-top:-10px;
+    font-size: 35pt;
+    text-align:center;
+    font-weight:900;
+    font-family: 'Yellowtail', Cooper;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.img-center {
+    margin: 0 auto;
+}
+
+p.frontP{
+    font-size:18pt;
+    line-height:20pt;
+    margin-top:-20px;
+    margin-bottom:-20px
+}
+p.frontP-smaller{
+    font-size:11pt;
+    text-align:center;
+}
+h3.frontH{
+    font-size:24pt;
+    text-align:center;
+    font-family: Cooper
+}
+footer {
+    margin: 50px 0;
+    text-align: center;
+}
