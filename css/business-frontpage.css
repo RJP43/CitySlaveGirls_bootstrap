@@ -4,13 +4,26 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
+body{
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
-.business-header {
+.navbar-brand:hover{
+    color: #B9929F !important;
+}
+.navbar-nav > li > a:hover{
+    color: #B9929F !important;
+}
+.navbar-nav > .active > a:hover{
+    color: #B9929F !important;
+}
+.navbar-nav > .open > a:hover{
+    color: #B9929F !important;
+}
+
+.business-header{
     height: 400px;
     background: url("../images/Chicago_State_St.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
@@ -22,45 +35,45 @@ body {
 /* Customize the text color and shadow color and to optimize text legibility. */
 
 
-.tagline {
+.tagline{
     margin-top: 125px;
     font-size: 45pt;
-    color:/*#FFCAD4*/#6D2E46;    
-    text-align:center;
-    font-weight:900;
+    color: /*#FFCAD4*/ #6D2E46;
+    text-align: center;
+    font-weight: 900;
     font-family: Cooper;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.taglineSmall {
-    color:/*#C08497*/#6D2E46;
-    margin-top:-10px;
+.taglineSmall{
+    color: /*#C08497*/ #6D2E46;
+    margin-top: -10px;
     font-size: 35pt;
-    text-align:center;
-    font-weight:900;
+    text-align: center;
+    font-weight: 900;
     font-family: 'Yellowtail', Cooper;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-.img-center {
+.img-center{
     margin: 0 auto;
 }
 
 p.frontP{
-    font-size:18pt;
-    line-height:20pt;
-    margin-top:-20px;
-    margin-bottom:-20px
+    font-size: 18pt;
+    line-height: 20pt;
+    margin-top: -20px;
+    margin-bottom: -20px
 }
 p.frontP-smaller{
-    font-size:11pt;
-    text-align:center;
+    font-size: 11pt;
+    text-align: center;
 }
 h3.frontH{
-    font-size:24pt;
-    text-align:center;
+    font-size: 24pt;
+    text-align: center;
     font-family: Cooper
 }
-footer {
+footer{
     margin: 50px 0;
     text-align: center;
 }
