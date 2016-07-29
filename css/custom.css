@@ -3,13 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-
+/*Start Nav. Bar, Footer, and Body*/
 body{
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
 .navbar-brand:hover{
     color: #B9929F !important;
 }
@@ -22,7 +19,25 @@ body{
 .navbar-nav > .open > a:hover{
     color: #B9929F !important;
 }
-
+.navbar-brand{
+    font-family: Cooper !important;
+}
+.img-center{
+    margin: 0 auto;
+}
+footer{
+    margin: 50px 0;
+    text-align: center;
+}
+a:hover{
+    color: #B9929F !important;
+    background:#5d3751;
+    letter-spacing: 1px;
+}
+a{
+    color:#5d3751
+}
+/*Banner on Front-Page*/
 .business-header{
     height: 400px;
     background: url("../images/Chicago_State_St.jpg") center center no-repeat scroll;
@@ -31,10 +46,6 @@ body{
     background-size: cover;
     -o-background-size: cover;
 }
-
-/* Customize the text color and shadow color and to optimize text legibility. */
-
-
 .tagline{
     margin-top: 125px;
     font-size: 45pt;
@@ -44,7 +55,6 @@ body{
     font-family: Cooper;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-
 .taglineSmall{
     color: /*#C08497*/ #6D2E46;
     margin-top: -10px;
@@ -54,26 +64,41 @@ body{
     font-family: 'Yellowtail', Cooper;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-.img-center{
-    margin: 0 auto;
-}
-
+/*Front-Page paragraphs and headings*/
 p.frontP{
     font-size: 18pt;
     line-height: 20pt;
     margin-top: -20px;
     margin-bottom: -20px
 }
-p.frontP-smaller{
-    font-size: 11pt;
+p.P-smaller{
+    font-size: 12pt;
     text-align: center;
 }
-h3.frontH{
+.frontH{
     font-size: 24pt;
     text-align: center;
     font-family: Cooper
 }
-footer{
-    margin: 50px 0;
+/*About page*/
+p.about{
+    font-size: 13pt;
+}
+.teamDiv{
+    margin-top:-25px;
+}
+p.otherP-smaller{
+    font-size: 10pt;
+    text-align:center;
+}
+div.middle{
+    margin:auto;
+    width:60%;
+    line-height:10pt;
+}
+.aboutH{
+    font-size: 16pt;
     text-align: center;
+    margin-bottom:0px;
+    font-family: Cooper
 }
