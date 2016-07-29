@@ -30,8 +30,8 @@ footer{
     text-align: center;
 }
 a:hover{
-    color: #B9929F !important;
-    background:#5d3751;
+    color: #5d3751/*#B9929F*/ !important;
+    /*background:#5d3751;*/
     letter-spacing: 1px;
 }
 a{
@@ -105,4 +105,33 @@ div.middle{
 .YT{
     font-family: 'Yellowtail';
     font-size:30pt
+}
+/*Analysis Page*/
+.anaHead{
+    text-align:center;
+    font-family:Cooper;
+}
+.portfolio-item {
+    margin-bottom: 25px;
+}
+.svg{
+    text-align:center
+}
+.svgNetwork{
+    text-align:center;
+    background:#FFF
+}
+.svgText{
+font-size:16pt;
+margin-top:10px;
+}
+/*.svgExplain{
+font-size:12pt;
+margin-top:-5px;
+}*/
+.thumb {
+    margin-bottom: 30px;
+}
+.thumbnailH{
+    font-family: Cooper;
 }
