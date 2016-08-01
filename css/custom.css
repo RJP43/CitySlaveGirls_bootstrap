@@ -26,20 +26,20 @@ body{
     margin: 0 auto;
 }
 footer{
-    margin: 50px 0;
+    margin: 20px 0;
     text-align: center;
 }
 a:hover{
-    color: #5d3751/*#B9929F*/ !important;
+    color: #5d3751 /*#B9929F*/ !important;
     /*background:#5d3751;*/
     letter-spacing: 1px;
 }
 a{
-    color:#5d3751
+    color: #5d3751
 }
 /*Banner on Front-Page*/
 .business-header{
-    height: 400px;
+    height: 350px;
     background: url("../images/Chicago_State_St.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,7 +47,7 @@ a{
     -o-background-size: cover;
 }
 .tagline{
-    margin-top: 125px;
+    margin-top: 80px;
     font-size: 45pt;
     color: /*#FFCAD4*/ #6D2E46;
     text-align: center;
@@ -68,70 +68,116 @@ a{
 p.frontP{
     font-size: 18pt;
     line-height: 20pt;
-    margin-top: -20px;
-    margin-bottom: -20px
+    margin-top: 20px;
+    margin-bottom: 5px
 }
 p.P-smaller{
     font-size: 12pt;
+    margin-top: 5px;
     text-align: center;
 }
 .frontH{
     font-size: 24pt;
     text-align: center;
+    margin-top: -10px;
     font-family: Cooper
 }
 /*About page*/
+.social-media > a{
+    padding: 8px;
+    font-size: 12px;
+}
+.aboutH-main{
+    font-size: 24pt;
+    /*text-align: center;*/
+    font-family: Cooper
+}
 p.about{
     font-size: 13pt;
 }
 .teamDiv{
-    margin-top:-25px;
+    margin-top: -25px;
 }
 p.otherP-smaller{
     font-size: 10pt;
-    text-align:center;
+    /*text-align:center;*/
 }
 div.middle{
-    margin:auto;
-    width:60%;
-    line-height:10pt;
+    margin: auto;
+    width: 80%;
+    line-height: 10pt;
 }
 .aboutH{
     font-size: 16pt;
-    text-align: center;
-    margin-bottom:0px;
+    /*text-align: center;*/
+    margin: auto;
     font-family: Cooper
 }
 .YT{
     font-family: 'Yellowtail';
-    font-size:30pt
+    font-size: 30pt;
+    margin: auto;
+}
+.leftAlign{
+    text-align: left;
+}
+.carouselH{
+    font-family: Cooper;
+    color: black;
+    margin-top:10px;
+}
+.carouselP{
+    color: black;
+    font-size:12pt;
+    text-align:left;
+margin:auto;    
 }
 /*Analysis Page*/
 .anaHead{
-    text-align:center;
-    font-family:Cooper;
+    text-align: center;
+    font-family: Cooper;
 }
-.portfolio-item {
+.portfolio-item{
     margin-bottom: 25px;
 }
 .svg{
-    text-align:center
+    text-align: center
 }
 .svgNetwork{
-    text-align:center;
-    background:#FFF
+    text-align: center;
+    background: #FFF
 }
 .svgText{
-font-size:16pt;
-margin-top:10px;
+    font-size: 16pt;
+    margin-top: 10px;
 }
 /*.svgExplain{
 font-size:12pt;
 margin-top:-5px;
 }*/
-.thumb {
+.thumb{
     margin-bottom: 30px;
 }
 .thumbnailH{
     font-family: Cooper;
+}
+/*Network Pages*/
+.key{
+    margin: auto;
+}
+.keyH{
+    font-family: Cooper;
+    font-size: 18pt;
+    font-weight: 900;
+    text-align: center;
+}
+.keyDesc{
+    list-style: square;
+    padding: 5px;
+    /*font-family:courier, fixed, monospace;*/
+    font-size: 14pt;
+}
+.network{
+    margin-top: 90px;
+    text-align: center;
 }

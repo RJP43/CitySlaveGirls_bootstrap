@@ -54,69 +54,51 @@
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                        <a href="map.html">Map</a>
-                    </li>
-                    <li>
-                        <a href="analysis.html">Analysis</a>
-                    </li>
-                    <li>
-                        <a href="readingView.html">Text</a>
-                    </li>
+                            <a href="map.html">Map</a>
+                        </li>
+                        <li>
+                            <a href="analysis.html">Analysis</a>
+                        </li>
+                        <li>
+                            <a href="readingView.html">Text</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
         </nav>
-        <!-- Image Background Page Header -->
-        <!-- Note: The background image is set within the custom.css file. -->
-        <header class="business-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="tagline">The Restoration of Nell Nelson</h1>
-                        <h2 class="taglineSmall">An Investigation of the <i>Chicago Times</i>'
-                            Series: "City Slave Girls"</h2>
-                    </div>
-                </div>
-            </div>
-        </header>
         <!-- Page Content -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <p class="frontP">This project restores Nell Nelson's instrumental work exposing
-                        cruel unsanitary working conditions in 19th-century Chicago’s manufacturing
-                        industry. A pioneer of investigative reporting, Nelson published the series,
-                        "City Slave Girls," in <i>The Chicago Times</i>. Focusing on the ill-effects
-                        of industrialization, she exposed the mistreatment of the women, children,
-                        and the impoverished.</p>
+                <div class="col-md-6 key">
+                    <h3 class="keyH">Reading the Network:</h3>
+                    <p class="keyDesc">In this visualization, the size of the node is dependent on
+                        the out-degree, or the number of nouns that word possessed. The larger the
+                        node, the more nouns the word possessed. This is a directional network,
+                        meaning that certain words own others; this is represented with arrows along
+                        the lines connecting the nodes. The color of the node is dependent on the
+                        in-degree, or the number of words by which the node was possessed. The more
+                        light blue a node is, the more it is being possessed by other words. The
+                        shape of the node determines if the node ever possesses another node:
+                        diamond nodes possess other nodes, and circle nodes never possess other
+                        nodes. The color of the border is dependent on different factors:
+                        black-border nodes are never owned, red-border nodes are site-index nouns or
+                        attributes that are directly possessed, orange-border nodes are site-index
+                        nouns or archetypes that are indirectly possessed, and yellow-border nodes
+                        never possess other nodes. The edge color is dependent on the article in
+                        which a link between nodes was first made and each article has a different
+                        color associated with it <small>(Click <a
+                                href="https://github.com/RJP43/CitySlaveGirls/blob/master/webDevelopment/GrammarNetworks/edgeColors.jpg"
+                                target="_blank">here</a> for color chart)</small>. Self-loops have
+                        been eliminated, and edges have been bundled.</p>
                 </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 class="frontH">Mapping</h3>
-                    <a href="map.html"><img class="img-circle img-responsive img-center"
-                            src="images/1898-map.jpg" alt="1898 Map of Chicago" /></a>
-                    <p class="P-smaller">Navigate late nineteenth century Chicago and explore
-                        the companies exposed in the series.</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="frontH">Analyzing</h3>
-                    <a href="analysis.html">
-                        <img class="img-circle img-responsive img-center"
-                            src="images/index_networkAnalysis_1888-08-03.png"
-                            alt="Network Graph from Article 1888-08-02 Speech Analysis" /></a>
-                    <p class="P-smaller">Insights into the series using text<br/>and network
-                        analysis.</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="frontH">Reading</h3>
-                    <a href="readingView.html"><img class="img-circle img-responsive img-center"
-                            src="images/advertisement_1888-08-05.jpg"
-                            alt="Advertisement from July, 8th 1888" /></a>
-                    <p class="P-smaller">Explore the series in Nelson's words.</p>
+                <!-- RJP:2016-07-31: EXPLORE options to have magnify view when mouseover on svg and edit svgs -->
+                <div class="col-md-6">
+                    <div class="network">
+                        <object id="svg1" data="images/1888-07-31GrammarNetwork.svg"
+                            type="image/svg+xml">Your Browser Doesn't Support SVG</object>
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -126,13 +108,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!--#config timefmt="%D" --> Last modified: <!--#echo var="LAST_MODIFIED" -->
-                        <br/>
+                        <br />
                         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-                            target="_blank"><img alt="Creative Commons License" style="border-width:0"
+                            target="_blank"><img alt="Creative Commons License"
+                                style="border-width:0"
                                 src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
                          /></a><br />This work is licensed under a <a rel="license"
-                             href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative
-                            Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                            href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                            >Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
                             License</a>. </div>
                 </div>
                 <!-- /.row -->
