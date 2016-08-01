@@ -27,6 +27,7 @@ body{
 }
 footer{
     margin: 20px 0;
+    padding: 5px;
     text-align: center;
 }
 a:hover{
@@ -40,11 +41,15 @@ a{
 /*Banner on Front-Page*/
 .business-header{
     height: 350px;
-    background: url("../images/Chicago_State_St.jpg") center center no-repeat scroll;
+    width: 100%;
+    background: url("../images/Chicago_State_St_Banner.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: contain;
     -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 .tagline{
     margin-top: 80px;
@@ -65,11 +70,16 @@ a{
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 /*Front-Page paragraphs and headings*/
+.frontCont{
+    background-size: contain;
+    margin: auto;
+    padding: 5px;
+}
 p.frontP{
     font-size: 18pt;
     line-height: 20pt;
-    margin-top: 20px;
-    margin-bottom: 5px
+    margin: auto;
+    padding: 5px;
 }
 p.P-smaller{
     font-size: 12pt;
@@ -80,7 +90,8 @@ p.P-smaller{
     font-size: 24pt;
     text-align: center;
     margin-top: -10px;
-    font-family: Cooper
+    font-family: Cooper;
+
 }
 /*About page*/
 .social-media > a{
@@ -121,18 +132,59 @@ div.middle{
 .leftAlign{
     text-align: left;
 }
-.carouselH{
+/*.carouselH{
     font-family: Cooper;
     color: black;
-    margin-top:10px;
+    margin-top: 10px;
 }
 .carouselP{
     color: black;
-    font-size:12pt;
-    text-align:left;
-margin:auto;    
-}
+    font-size: 12pt;
+    text-align: left;
+    margin: auto;
+}*/
 /*Analysis Page*/
+.centerBtn{
+    text-align: center;
+}
+.btn-primary{
+    background: #FFF !important;
+    color: #6D2E46 !important;
+    border-style: dotted !important;
+    border-color: #6D2E46 !important;
+
+}
+.btn-primary:hover{
+    background: #B9929F !important;
+    color: black !important;
+    border-style: dotted !important;
+    border-color: #6D2E46 !important;
+}
+.btn-primary:active{
+    background: #FFF !important;
+    color: #6D2E46 !important;
+    border-style: dotted !important;
+    border-color: #6D2E46 !important;
+}
+.btn-primary:visited{
+    background: #FFF !important;
+    color: #6D2E46 !important;
+    border-style: dotted !important;
+    border-color: #6D2E46 !important;
+}
+.popupH{
+    text-align: center;
+    font-family: Cooper;
+    font-size: 18pt;
+}
+.popupP{
+    margin: auto;
+    font-size: 12pt;
+}
+.close{
+    font-size: 20px;
+    font-weight: bold;
+}
 .anaHead{
     text-align: center;
     font-family: Cooper;
@@ -141,7 +193,8 @@ margin:auto;
     margin-bottom: 25px;
 }
 .svg{
-    text-align: center
+    text-align: center;
+    margin: auto;
 }
 .svgNetwork{
     text-align: center;
@@ -149,7 +202,8 @@ margin:auto;
 }
 .svgText{
     font-size: 16pt;
-    margin-top: 10px;
+    margin: auto;
+    ;
 }
 /*.svgExplain{
 font-size:12pt;
