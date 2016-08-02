@@ -94,6 +94,33 @@ p.P-smaller{
 
 }
 /*About page*/
+
+.carousel-content{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.carousel-control{
+    background: #B9929F;
+}
+.carH{
+    text-align:center;
+    font-family:Cooper;
+    font-size:16pt;
+}
+.carP{
+    text-align:left;
+    font-size:12pt;
+}
+.carP-smaller{
+    text-align:left;
+    font-size:10pt;
+}
+#text-carousel{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
 .social-media > a{
     padding: 8px;
     font-size: 12px;
