@@ -262,3 +262,11 @@ margin-top:-5px;
     margin-top: 90px;
     text-align: center;
 }
+/*Map Page*/
+.map-caption{
+    padding:5px;
+    margin:auto;
+}
+.top-space{
+    margin-top:5px;
+}
