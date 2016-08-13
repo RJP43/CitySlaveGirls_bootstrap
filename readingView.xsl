@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml"
-    exclude-result-prefixes="xs" version="2.0">
-    <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat"
-        omit-xml-declaration="yes"/>
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs" version="2.0">
+    <xsl:output method="html" encoding="utf-8" omit-xml-declaration="yes"/>
     <xsl:template match="/">
-        <div class="col-md-8 article">
+        <div class="col-md-3">
+            <div id="sideNav" class="panel panel-default">
+                <div class="panel-body">
+                    <h2>Filter Text</h2>
+                    <ul class="nav nav-pills nav-stacked">
+                        <xsl:if test="//said[@who = '#nellNelson']">
+                            <li>
+                                <input type="checkbox" value="nellNelson"/>
+                                <span class="nellNelson">Nell Nelson</span>
+                            </li>
+                        </xsl:if>
+                        <xsl:if test="//said[@ana = 'male']">
+                            <li>
+                                <input type="checkbox" value="male"/>
+                                <span class="male">Male</span>
+                            </li>
+                        </xsl:if>
+                        <xsl:if test="//said[@ana = 'female' and not(@who = '#nellNelson')]">
+                            <li>
+                                <input type="checkbox" value="female"/>
+                                <span class="female">Female</span>
+                            </li>
+                        </xsl:if>
+                        <xsl:if test="//said[@ana = 'unknown']">
+                            <li>
+                                <input type="checkbox" value="unknown"/>
+                                <span class="unknown">Unknown</span>
+                            </li>
+                        </xsl:if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 article">
             <div class="articleHead">
                 <h1 class="newspaperTitle">
                     <i>The Chicago Times</i>
@@ -268,7 +299,7 @@
             <xsl:when test="@type = 'address'">
                 <span class="address">
                     <!--<span class="{@ref/substring-after(.,'#')}">-->
-                        <xsl:apply-templates/>
+                    <xsl:apply-templates/>
                     <!--</span>-->
                 </span>
             </xsl:when>

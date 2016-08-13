@@ -270,3 +270,14 @@ margin-top:-5px;
 .top-space{
     margin-top:5px;
 }
+/*Text Page*/
+#sideNav{
+    position:fixed;
+}
+#sideNav li > ul{
+    list-style: none;
+}
+#sideNav h2{
+    font-family: Cooper;
+    text-align:center;
+}
