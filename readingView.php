@@ -14,13 +14,14 @@ if (1 == 0) { // does it match the pattern?
 } elseif (!in_array($filename, $xml_files)) { // is it in the corpus?
     return_error(2);
 }
+echo dirname(__FILE__);
 $xmlfile = dirname(__FILE__) . "/articles/$filename";
 $htmlfilename = str_replace('xml', 'html', $filename);
 $htmlfile = dirname(__FILE__) . "/articles/html/$htmlfilename";
 $xslfile = dirname(__FILE__) . "/readingView.xsl";
 if (!(file_exists($htmlfile))) { #if html doesn't exist, generate it
     $output=null;$returnstatus=null;
-    exec("/usr/bin/java -jar /opt/saxon/saxon9he.jar -s:$xmlfile -xsl:$xslfile -o:$htmlfile 2>&1",$output,$returnstatus);
+    exec("C:\Program Files (x86)\Java\jre1.8.0_101\bin\java -jar saxon9he.jar -s:$xmlfile -xsl:$xslfile -o:$htmlfile 2>&1",$output,$returnstatus); # this changes pending on where java sits on the server (For Obdurodon: /usr/bin/java)
     echo $returnstatus; print_r($output);
     if (!(file_exists($htmlfile))) { #if generation failed, die; exec won't block, so can't use 'or die'
         return_error(3);
