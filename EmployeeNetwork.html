@@ -36,25 +36,33 @@
         <!--#include virtual="top.html" -->
         <!-- Page Content -->
         <div class="container">
-            <div class="row top-space">
-                <figure class="col-lg-10 figure">
-                    <img class="img-center" src="images/1898_LOC_BusinessDistrictChicago.jpg"
-                        alt="1898 Drawn Picture of Chicago Business District" />
-                    <figcaption class="figure-caption map-caption">Poole Brothers. Bird's-Eye-View
-                        of the Business District of Chicago. Chicago, 1898. <a
-                            href="https://www.loc.gov/item/75693212/" target="_blank">Retrieved from
-                            the Library of Congress</a>.</figcaption>
-                </figure>
-                <div class="col-lg-2">
-                    <!--<img class="img-center" src="images/wireframe_mapping.jpg"
-                        alt="Wireframe of Map Page Expectations" />--><!-- RJP:2016-08-03:Uncomment this to see the Wireframe Expectations of this page -->
-                    <p class="leftAlign">The article date, number in series, link to reading view, and list of
-                        mentioned companies will appear in this space once site development is
-                        complete.</p>
+            <!-- <div class="row">
+                <div class="col-md-6 key">
+                    <h3 class="keyH">Reading the Network:</h3>
+                    <p class="keyDesc"></p>
+                </div>-->
+            <!-- RJP:2016-07-31: EXPLORE options to have magnify view when mouseover on svg and edit svgs -->
+            <div class="col-xs-12">
+                <p class="col-xs-3 keyDesc">This network is still "under construction"; a network
+                    legend and descriptive paragraph is in the works. Since the network is an SVG
+                    you can zoom in and out without pixelization of the image.</p>
+                <div class="col-xs-9 network">
+                    <object id="svg1" data="images/Employee_GrammarNetwork.svg" type="image/svg+xml"
+                        >Your Browser Doesn't Support SVG</object>
                 </div>
             </div>
+            <!--</div>-->
+            <!-- /.row -->
+            <hr />
+            <!-- Footer -->
+            <!--#include virtual="foot.html" -->
         </div>
-        <!-- Footer -->
-        <!--#include virtual="foot.html" -->
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/8a3ee4eb37.js"></script>
     </body>
+
 </html>

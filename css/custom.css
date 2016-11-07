@@ -36,7 +36,7 @@ footer{
     margin: 20px 0;
     padding: 5px;
     text-align: center;
-    font-size:10pt;
+    font-size: 10pt;
 }
 a:hover{
     color: #5d3751 /*#B9929F*/ !important;
@@ -167,7 +167,7 @@ div.middle{
 }
 .leftAlign{
     text-align: left;
-    font-size:13pt;
+    font-size: 13pt;
 }
 /*.carouselH{
     font-family: Cooper;
@@ -262,11 +262,11 @@ margin-top:-5px;
     font-weight: 900;
     text-align: center;
 }
-.keyDesc{
-    list-style: square;
-    padding: 5px;
-    /*font-family:courier, fixed, monospace;*/
-    font-size: 14pt;
+p.keyDesc{
+    font-size: 14pt !important;
+    text-align: left !important;
+    margin: auto !important;
+    
 }
 .network{
     margin-top: 90px;
@@ -276,6 +276,7 @@ margin-top:-5px;
 .map-caption{
     padding: 5px;
     margin: auto;
+    font-size: 11pt;
 }
 .top-space{
     margin-top: 5px;
