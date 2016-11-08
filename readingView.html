@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
-        
+
         <meta charset="utf-8" />
         <!--
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="NellNelson_CitySlaveGirls" />
         <meta name="author" content="RebeccaParker" />
-        
+
         <title>Nell Nelson: City Slave Girls</title>
-        
+
         <!-- Bootstrap Core CSS -->
         <!--<link href="css/bootstrap.min.css" rel="stylesheet"/>-->
         <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous"-->
         <!-- Custom CSS -->
         <link href="css/custom.css" rel="stylesheet" />
         <link href="http://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" />
-        
+
         <!-- jQuery -->
         <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
         <!-- Custom javaScript -->
@@ -33,15 +33,83 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-        
+
     </head>
-    
+
     <body>
         <!-- Navigation -->
         <!--#include virtual="top.html" -->
         <!-- Page Content -->
         <div class="container">
-            
+            <!--
+              RJP:2016-11-07: Sad attempt at getting this PHP to work. Need more time with this!
+                <p>Select an article date.</p>
+                <ul>
+                    <?php
+                        require_once("config.php");
+                        $contents = REST_PATH . "/db/Nelson/CSG_XML/articleDates.xql";
+                        $result = file_get_contents($contents);
+                        echo $result;
+                    ?>
+                </ul>
+            -->
+            <div id="articleCarousel" class="carousel slide" data-ride="carousel"
+                data-interval="false">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-07-30_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-07-31_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-01_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-02_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-03_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-04_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-09_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-12_ChTimes.html" -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <!--#include virtual="articleDivs/1888-08-19_ChTimes.html" -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
         </div>
         <!-- Footer -->
         <!--#include virtual="foot.html" -->

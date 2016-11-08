@@ -23,14 +23,14 @@ body{
 }
 .navbar-brand{
     font-family: Cooper !important;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 .img-center{
     margin: 0 auto;
 }
 .navbar-nav{
     font-family: "Proza Libre";
-    font-size: 14pt;
+    font-size: 12pt;
 }
 footer{
     margin: 20px 0;
@@ -65,7 +65,7 @@ a{
     text-align: center;
     font-weight: 900;
     font-family: Cooper;
-    text-shadow: -1px 0 #5d3751, 0 1px #5d3751, 1px 0 #5d3751, 0 -1px #5d3751;
+    /*text-shadow: -1px 0 #5d3751, 0 1px #5d3751, 1px 0 #5d3751, 0 -1px #5d3751;*/
 }
 .taglineSmall{
     color: /*#C08497*/ #6D2E46;
@@ -74,7 +74,7 @@ a{
     text-align: center;
     font-weight: 900;
     font-family: 'Yellowtail', Cooper;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 /*Front-Page paragraphs and headings*/
 .frontCont{
