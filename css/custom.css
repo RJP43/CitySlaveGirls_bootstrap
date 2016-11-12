@@ -266,7 +266,7 @@ p.keyDesc{
     font-size: 14pt !important;
     text-align: left !important;
     margin: auto !important;
-    
+
 }
 .network{
     margin-top: 90px;
@@ -282,7 +282,7 @@ p.keyDesc{
     margin-top: 5px;
 }
 /*Text Page*/
-#sideNav{
+/*#sideNav{
     position: fixed;
 }
 #sideNav li > ul{
@@ -291,4 +291,13 @@ p.keyDesc{
 #sideNav h2{
     font-family: Cooper;
     text-align: center;
+}*/
+/*.carousel-controls-mini {
 }
+.carousel-controls-mini > a {
+	border:1px solid #eee;
+  	width:20px;
+    display:block;
+    float:left;
+    text-align:center;
+}*/
