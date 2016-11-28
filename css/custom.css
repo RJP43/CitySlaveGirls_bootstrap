@@ -281,7 +281,13 @@ p.keyDesc{
 .top-space{
     margin-top: 5px;
 }
+.mapIMG{
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    min-width: 1440px !important;
 
+}
 /*Text Page*/
 /*#sideNav{
     position: fixed;
