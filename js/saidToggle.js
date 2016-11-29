@@ -55,7 +55,6 @@ function toggleHighlight() {
     for (var i = 0; i < spans.length; i++) {
         if (status == true) {
             spans[i].style.backgroundColor = color;
-            spans[i].style.color = '#FFFFFF';
         } else {
             spans[i].style.backgroundColor = originalBackground;
             spans[i].style.color = '#000000';
