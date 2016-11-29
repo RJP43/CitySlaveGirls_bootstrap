@@ -35,6 +35,7 @@ body{
 footer{
     margin: 20px 0;
     padding: 5px;
+    padding-top: 10px;
     text-align: center;
     font-size: 10pt;
 }
@@ -181,6 +182,7 @@ div.middle{
     margin: auto;
 }*/
 /*Analysis Page*/
+
 .centerBtn{
     text-align: center;
 }
@@ -268,10 +270,6 @@ p.keyDesc{
     margin: auto !important;
 
 }
-.network{
-    margin-top: 90px;
-    text-align: center;
-}
 /*Map Page*/
 .map-caption{
     padding: 5px;
@@ -281,13 +279,7 @@ p.keyDesc{
 .top-space{
     margin-top: 5px;
 }
-.mapIMG{
-    width: 100% !important;
-    height: auto !important;
-    min-height: 100% !important;
-    min-width: 1440px !important;
 
-}
 /*Text Page*/
 /*#sideNav{
     position: fixed;
@@ -308,3 +300,68 @@ p.keyDesc{
     float:left;
     text-align:center;
 }*/
+.article{
+    color: black;
+    float:right;
+    margin-left:100px;
+    padding:15px;
+    width:85%
+}
+.articleHead{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Goudy Old Style';
+    text-align: center;
+}
+.headlinesText ul{
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    list-style-type: none;
+}
+.headlinesText li{
+    text-align: center;
+    display: list-item;
+    padding: 5px;
+    color: black;
+    list-style-type: none;
+}
+.headlinesTitle{
+    text-align: center;
+    list-style-type: none;
+}
+.headlinesTitle ul li{
+    color: black;
+    text-align: center;
+    list-style-type: none;
+}
+.articleText{
+    margin: 20px;
+    padding: 5px;
+}
+/*rjp: toggle box for articles*/
+#checkboxes{
+    margin-left:10px;
+    padding: 10px;
+    text-align: left;
+    display: block;
+    float: left !important;
+    position: fixed;
+    width: 15%;
+    overflow: hidden;
+    background:#E0D8DE;
+    border-radius:10px;
+    /* border:2px solid #D1BEB0; /\*#E0D8DE*\/*/
+}
+#checkboxes h3{
+    margin:0px;
+    padding:1px;
+}
+#checkboxes
+li{
+    list-style-type: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+}
