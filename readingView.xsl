@@ -8,8 +8,11 @@
         omit-xml-declaration="yes"/>
 
     <xsl:template match="/">
-        <html>
+        <html lang="en">
             <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="description" content="NellNelson_CitySlaveGirls"/>
+                <meta name="author" content="RebeccaParker"/>
                 <title>
                     <xsl:text>Article </xsl:text>
                     <xsl:apply-templates select="//teiHeader//title//@when"/>
@@ -99,7 +102,20 @@
                             </li>
                         </xsl:if>
                     </ul>
-                    <a class="text-center" href="#top">Back to Beginning of Article</a>
+                    <xsl:if test="//rdg">
+                        <p class="text-center">
+                            <span class="var">
+                                <xsl:text>**asterisks** indicate</xsl:text>
+                                <br/>
+                                <xsl:text>variant text</xsl:text>
+                                <br/>
+                                <xsl:text>(mouseover to view)</xsl:text>
+                            </span>
+                        </p>
+                    </xsl:if>
+                    <p class="text-center">
+                        <a href="#top">Back to Beginning of Article</a>
+                    </p>
                 </div>
                 <div class="container">
                     <div class="row">
@@ -175,8 +191,6 @@
                             </xsl:if>
                         </div>
                     </div>
-
-                    <hr/>
                     <xsl:comment>#include virtual="foot.html"</xsl:comment>
                 </div>
             </body>
@@ -187,14 +201,18 @@
             <xsl:when test="following-sibling::rdg[@wit[contains(., '#WSGC')]]">
                 <xsl:if test="following-sibling::rdg[@wit[contains(., '#WSGC')]] != ''">
                     <span class="var"
-                        title="Altered in Barkley Publication: {following-sibling::rdg[@wit[contains(., '#WSGC')]]}">
+                        title="Censored to {following-sibling::rdg[@wit[contains(., '#WSGC')]]} in Barkley Publication.">
+                        <xsl:text>**</xsl:text>
                         <xsl:apply-templates/>
+                        <xsl:text>**</xsl:text>
                     </span>
                 </xsl:if>
                 <xsl:if test="following-sibling::rdg[@wit[contains(., '#WSGC')]] = ''">
-                    <span class="var" title="Excluded in Barkley Publication">
-                        <xsl:apply-templates/>
+                    <span class="var" title="Excluded in Barkley Publication --&gt;">
+                        <xsl:text>**</xsl:text>
                     </span>
+                    <xsl:apply-templates/>
+                    <span class="var" title="&lt;-- Excluded in Barkley Publication">**</span>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise/>
@@ -314,10 +332,10 @@
     </xsl:template>
     <xsl:template match="unclear">
         <xsl:choose>
-            <xsl:when test="./supplied">
+            <xsl:when test="child::supplied">
                 <span class="unclear"
                     title="The text provided here was interpreted by a project editor because the transcription source was unclear.">
-                    <xsl:apply-templates/>
+                    <xsl:apply-templates select="supplied"/>
                 </span>
             </xsl:when>
             <xsl:otherwise>
