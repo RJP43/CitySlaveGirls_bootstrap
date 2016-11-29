@@ -23,8 +23,14 @@ body{
 }
 .navbar-brand{
     font-family: Cooper !important;
-    font-size: 12pt;
+    font-size: 14pt !important;
+    text-shadow:
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF; 
 }
+
 .img-center{
     margin: 0 auto;
 }
@@ -47,7 +53,9 @@ a:hover{
 a{
     color: #5d3751 !important;
 }
-ul.nav a { color: #fff !important; }
+ul.nav a{
+    color: #fff !important;
+}
 
 /*Banner on Front-Page*/
 /*.business-header{
@@ -311,24 +319,27 @@ p.keyDesc{
 }
 
 .dialogue{
-    font-weight:700 !important;
+    font-weight: 700 !important;
 }
 .chicTimes{
-    font-style:italic;
+    font-style: italic;
 }
 
-q.double, q.dialogue {
-  quotes: "“" "”";
+q.double,
+q.dialogue{
+    quotes: "“" "”";
 }
-q.double:before, q.dialogue:before {
+q.double:before,
+q.dialogue:before{
     content: open-quote;
 }
-q.double:after, q.dialogue:after {
+q.double:after,
+q.dialogue:after{
     content: close-quote;
 }
 q.single:before,
-q.single:after {
- content: "";
+q.single:after{
+    content: "";
 }
 
 
@@ -360,11 +371,11 @@ li{
 }
 /*Reading View Main Page*/
 .articlePage{
-    margin-top:25px;
+    margin-top: 25px;
     padding: 25px;
     text-align: center;
-    
+
 }
 .artList{
-        list-style-type: none;
+    list-style-type: none;
 }
