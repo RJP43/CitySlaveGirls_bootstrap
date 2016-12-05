@@ -25,7 +25,7 @@
             </head>
             <body>
                 <xsl:comment>#include virtual="top.html"</xsl:comment>
-                <div id="checkboxes" class="col-xs-3">
+                <div id="checkboxes" class="col-sm-3">
                     <h3 class="text-center">Toggle Dialogue by Archetype</h3>
 
                     <ul>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 article" id="top">
+                        <div class="col-sm-9 article" id="top">
                             <div class="articleHead">
                                 <h1 class="paperTitle">The Chicago Times</h1>
                                 <h2 class="seriesTitle">"City Slave Girls"</h2>
